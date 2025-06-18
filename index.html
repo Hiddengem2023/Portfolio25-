@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Watcher's View|professional portfolio</title>
+  <!-- HTML -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Home page -->
+<section class="container">
+  <div id="home">
+   <div class="homepage-img">
+  <img src="/Images/home-img.png  " alt="UFO image">
+    </div>
+    <div class="logo-container">
+     <div class="logo-space">
+     <p>Σηιgma</p>
+    </div>
+    </div>
+  </div>
+  <div class="hero-section">
+    <div class="hero-info">
+      <span>Frontend Developer</span>
+      <p class="tagline">Seeing the world from <span>a different perspective.</span></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="hero-img auto-animate scroll-blur">
+      <img  src="/Images/hero.png" alt="hero image">
+    </div>
+  </div>
+</section>
+<section class="navigation-section">
+  <div class="navigation">
+    <div class="navigate">
+      <ul>
+        <li>
+          <a href="#home"><i class="fas fa-home"></i></a>
+        </li>
+        <li>
+          <a href="#about"><i class="fas fa-user"></i></a>
+        </li>
+        <li>
+          <a href="#portfolio"><i class="fas fa-briefcase"></i></a>
+        </li>
+        <li>
+          <a href="#skills"><i class="fas fa-tools"></i></a>
+        </li>
+        <li>
+          <a href="#contact"><i class="fas fa-envelope"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="about">
+  <div class="about auto-animate">
+    <h2 class="auto-animate">About me</h2>
+    <div class="about-info">
+     <p>Name: Adesanmi Dorcas Taiwo</p>
+      <p>Phone: +234(0) 8084990846</p>
+      <p>Age: 17</p>
+      <p>Nationality: Nigeria</p>
+      <p>E-mail: scaroddolly15@gmail.com</p>
+      <p>Experience: 2+ years</p>
+      <div class="about-img">
+      <img src="/Images/me.jpg" alt="" />  
+      </div>
+      <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+      <div class="time-zone">
+        <img src="/Images/time.jpg" alt="" />
+      </div>
+      <span>Flexible with time zone.
+      <br />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+      </span>
+      <button type="submit">Reach Out</button>
+      </div>
+</section>
+<section id="portfolio">
+  <h2 class="auto-animate">Portfolio</h2>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide auto-animate">
+        <div class="slide-content">
+          <img src="/Images/portfolio1.jpg" alt="" />
+          <a href="https://enigma-restaurant25.vercel.app/">View Full project</a>
+        </div>
+      </div>
+    <div class="swiper-slide auto-animate">
+        <div class="slide-content">
+          <img src="/Images/portfolio2.jpg" alt="" />
+          <a href="#">View Full project</a>
+        </div>
+      </div>
+     <div class="swiper-slide auto-animate">
+        <div class="slide-content">
+          <img src="/Images/portfolio3.jpg" alt="" />
+          <a href="#">View Full project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="skills">
+  <h2 class="auto-animate">My skills</h2>
+  <div class="skill-container auto-animate">
+    <div class="skill-image">
+      <img src="/Images/telescope.png" alt="telescope">
+    </div>
+    <div class="skills">
+     <div class="skill-bar-image">
+       <i class="fab fa-html5"id="sk"></i>
+      <div class="skill-bar"></div>
+     </div>
+     </div>
+     <div class="skills">
+     <div class="skill-bar-image">
+       <i class="fa-brands fa-css"></i>
+      <div class="skill-bar second"></div>
+    </div>
+    </div>
+    <div class="skills-container">
+    <div class="skills">
+     <div class="skill-bar-image">
+       <i class="fa-brands fa-js"></i>
+      <div class="skill-bar third"></div>
+    </div>
+    </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="contact">
+  <h2>Contact </h2>
+  <div class="contact-info">
+    <p>Feel free to reach out using the contact form below or connect with me on social media. I'll get back to you as soon as possible. Let's create something amazing together!</p>
+    <h2>Message me </h2>
+    <div class="contact-form">
+      <form id="form" method="get" accept-charset="utf-8">
+      <input type="text" id="Name"placeholder="Name"required>
+      <input type="email" id="email" placeholder="E-mail address" required>
+      <textarea  id="message" cols="30" rows="8" placeholder="leave a message..." required></textarea>
+      <br>
+      <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+  <!-- Project -->
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("YOUR_PUBLIC_KEY");
+  })();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
